@@ -16,6 +16,7 @@ app.get('/', (req, res) => {
 
 app.use("/account", proxy("http://localhost:3001"));
 app.use("/request", proxy("http://localhost:3002"));
+app.use("/notification", proxy("http://localhost:3004"));
 
 
 app.use(function(req, res, next) {
