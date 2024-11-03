@@ -1,23 +1,13 @@
-# Micro-Service Request
+## Gateway API
 
-This project provides an API to manage requests, allowing users to create, view, update, and delete request records. Additionally, it includes functionality for status updates and notifications. The API is documented with Swagger.
-
-
-## Technologies
-- **Node.js** and **Express** for the backend server
-- **MongoDB** with Mongoose for data persistence
-- **Swagger** for API documentation
-- **Axios** for HTTP requests within the server
-
-
-
+This project is an API gateway built with Express.js, designed to manage and route requests for different services in a modular, scalable way. The project also uses JSON files for data management and includes Swagger and OpenAPI for comprehensive API documentation.
 ## Installation
 
-Install Micro-Service Request
+Install Gateway Server
 
 ```bash
-    git clone https://github.com/belzir-studyCase/ms-request.git
-    cd ms-request
+    git clone https://github.com/belzir-studyCase/gateway.git
+    cd gateway
 ```
 Install dependencies:
 
@@ -31,5 +21,12 @@ Run Server
     npm run dev
 ```
 
+# Usage
+Swagger Documentation
 
-
+Swagger is integrated into this project. You can access the API documentation by navigating to:
+```bash
+    http://localhost:3000/account/api-docs
+    http://localhost:3000/request/api-docs
+    http://localhost:3000/notification/api-docs
+```
