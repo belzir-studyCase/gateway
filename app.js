@@ -13,8 +13,12 @@ app.get('/', (req, res) => {
 
 
 app.use("/account", proxy("https://ms-account.onrender.com"));
-app.use("/request", proxy("http://localhost:3002"));
-app.use("/notification", proxy("http://localhost:3004"));
+app.use("/request", proxy("https://ms-request.onrender.com"));
+app.use("/notification", proxy("https://ms-notification.onrender.com"));
+
+// app.use("/account", proxy("http://localhost:3001"));
+// app.use("/request", proxy("http://localhost:3002"));
+// app.use("/notification", proxy("http://localhost:3004"));
 
 
 app.use(function(req, res, next) {
