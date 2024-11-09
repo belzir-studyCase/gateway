@@ -7,14 +7,12 @@ var app = express();
 
 app.use(cors());
 app.use(express.json());
-
-// Set default route for '/'
 app.get('/', (req, res) => {
-  res.send('Welcome to the Gateway URL!');
+  res.send('Welcome to the Gateway URL....!');
 });
 
 
-app.use("/account", proxy("http://localhost:3001"));
+app.use("/account", proxy("https://ms-account.onrender.com"));
 app.use("/request", proxy("http://localhost:3002"));
 app.use("/notification", proxy("http://localhost:3004"));
 
